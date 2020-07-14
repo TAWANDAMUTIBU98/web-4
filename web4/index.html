@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Enquiry Form</title>
+    <style type="text/css">
+        form{
+            padding-top: 135px;
+            text-align: center;
+            font-size: 30px;
+            background-color:grey ButtonShadow;
+            padding-bottom: 130px;
+        }
+        input{
+            font-size: 28px;
+            width: 245px;
+            height: 45px;
+        }
+        label{
+            display: moz-grid;
+            margin-bottom: auto;
+            } 
+            .nav ul{
+            margin: 0;
+            }
+        .nav li{
+                display: inline;
+                padding: 0 8%;
+            }
+        .nav a{
+                display: inline-block;
+                padding: .4em;
+                color: sletgrey;
+                text-decoration: line-through ;
+            }
+        .nav{
+                text-align: center;
+                font-size: 1.35em;
+                font-weight: lighter;
+                border-bottom: solid black;
+                background-color:blue;
+            }
+        .nav a:hover{
+                background-color: black;
+            }                       
+    </style>
+</head>
+<body>
+    <nav class="nav main-nav">
+        <ul>
+           <li><a href="index.html"> SUMBIT</a></li>
+           <li><a href="check.html">ENQUIRIES</a></li>
+           <li><a href="admin.html">ADMIN</a></li>
+       </ul>
+   </nav>
+
+    <form action="connecting.php" method="POST">
+          <label> NAME : </label>
+           <input type="text" name="name1" id="" required>
+           <br>
+           <br>
+           <label for=""> EMAIL : </label>
+            <input type="email" name="email" id="" required>
+            <br>
+            <br>
+           <label for=""> NUMBER : </label>
+            <input type="number" name="number1" id="" required>
+            <br>
+            <br>
+            <label for="">ENQUIRY : </label>
+            <textarea name="enquiry" cols="28" rows="8" style="font-size: medium; font-family: 'Times New Roman', Times, serif;"></textarea>
+            <br>
+            <br>
+            <hr>
+            <input type="submit" value="Sumbit" name="submit">
+    </form>
+</body>
+</html>

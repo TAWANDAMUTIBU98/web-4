@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>ADMIN</title>
+    <style type="text/css">
+        form{
+            padding-top: 135px;
+            text-align: center;
+            font-size: 30px;
+            background-color:grey ButtonShadow;
+            padding-bottom: 130px;
+        }
+        input{
+            font-size: 28px;
+            width: 245px;
+            height: 45px;
+        }
+        label{
+            display: -moz-grid;
+            margin-bottom: auto;
+            } 
+            .nav ul{
+            margin: 0;
+            }
+        .nav li{
+                display: inline;
+                padding: 0 8%;
+            }
+        .nav a{
+                display: inline-block;
+                padding: .4em;
+                color:slategrey;
+                text-decoration: line-through;
+            }
+        .nav{
+                text-align: center;
+                font-size: 1.35em;
+                font-weight: lighter;
+                border-bottom: solid black;
+                background-color:blue;
+            }
+        .nav a:hover{
+                background-color: black;
+            }                       
+    </style>
+</head>
+<body>
+    <nav class="nav main-nav">
+        <ul>
+           <li><a href="index.html"> SUMBIT</a></li>
+           <li><a href="check.html">ENQUIRIES</a></li>
+           <li><a href="admin.html">ADMIN</a></li>
+       </ul>
+   </nav>
+   <form action="login.php" method="POST">
+    Username : <input type="text" name="user">
+    <br>
+    <br>
+    Password : <input type="password" name="pass"> 
+    <br>
+    <br>
+    <hr>
+    
+    <input type="submit" name="submit" value="LOG IN">
+</form>
+</body>
+</html>
+
